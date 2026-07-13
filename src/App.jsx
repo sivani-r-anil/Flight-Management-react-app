@@ -7,18 +7,21 @@ import AddFlight from './components/AddFlight'
 import ViewFlight from './components/ViewFlight'
 import NavigationBar from './components/NavigationBar'
 import Home from './components/Home'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <AddFlight />
-      <Home/>
-      
-
-      <ViewFlight/>
-      <NavigationBar/>
+     <BrowserRouter>
+     <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/view' element={<ViewFlight/>}/>
+      <Route path='/add' element={<AddFlight/>}/>
+     </Routes>
+     
+     </BrowserRouter>
     </>
   )
 }

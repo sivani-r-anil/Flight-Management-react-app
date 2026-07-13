@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
+import NavigationBar from './NavigationBar'
 
 const ViewFlight = () => {
 
@@ -29,6 +30,7 @@ const ViewFlight = () => {
 
     return (
         <div>
+            <NavigationBar/>
             <h2 style={{ color: "#1565C0", textAlign: "center", fontFamily: "Montserrat" }}>
                 ✈️ View Flights</h2>
             <table class="table">
