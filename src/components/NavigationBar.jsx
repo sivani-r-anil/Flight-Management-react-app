@@ -31,17 +31,17 @@ const NavigationBar = () => {
 
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav ms-auto">
-                            <a className="nav-link text-white fw-semibold mx-2" href="/">
+                            <Link className="nav-link text-white fw-semibold mx-2" to="/">
                                 Home
-                            </a>
+                            </Link>
 
-                            <a className="nav-link text-white fw-semibold mx-2" href="/add">
+                            <Link className="nav-link text-white fw-semibold mx-2" to="/add">
                                 Add Flight
-                            </a>
+                            </Link>
 
-                            <a className="nav-link text-white fw-semibold mx-2" href="/view">
+                            <Link className="nav-link text-white fw-semibold mx-2" to="/view">
                                 View Flights
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
